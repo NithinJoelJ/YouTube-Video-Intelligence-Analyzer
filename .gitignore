@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+.streamlit/
+.env
+venv/
+env/
+.gemini/
+*.ipynb
+*copy*
+test_models.py
+main.py

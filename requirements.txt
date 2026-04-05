@@ -1,0 +1,11 @@
+yt-dlp
+youtube-comment-downloader
+vaderSentiment
+pandas
+numpy
+scikit-learn
+matplotlib
+plotly
+streamlit
+wordcloud
+nltk
