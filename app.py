@@ -4,7 +4,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from analyzer import YouTubeAnalyzer
 
-st.set_page_config(page_title="YouTube Video Intelligence Analyzer", page_icon=None, layout="wide")
+st.set_page_config(page_title="YouTube NLP Intelligence & Sentiment Analyzer", page_icon=None, layout="wide")
 
 # Custom CSS for Premium Academic Look
 st.markdown("""
@@ -17,8 +17,8 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("YouTube Video Intelligence Analyzer")
-st.markdown("**CSI4004 Academic Research Framework** | Advanced Visual Analytics")
+st.title("YouTube NLP Intelligence & Sentiment Analyzer")
+st.markdown("**CSI4001: Natural Language Processing** | Advanced Intelligence System")
 
 # Sidebar
 with st.sidebar:
@@ -27,7 +27,7 @@ with st.sidebar:
     sub_sample = 200
     st.markdown("---")
     st.header("Academic Alignment")
-    st.info("CSI4004 Course Modules: 1, 2, 4, 5, 7")
+    st.info("CSI4001 Modules: 1, 5, 6, 7")
 
 # Inputs
 video_url = st.text_input("YouTube URL:", placeholder="Paste link here...")

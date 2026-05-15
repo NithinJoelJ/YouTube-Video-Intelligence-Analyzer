@@ -1,67 +1,82 @@
-# YouTube Video Intelligence Analyzer
+# 📊 YouTube NLP Intelligence & Sentiment Analyzer
+### **CSI4001: Natural Language Processing** | Advanced Intelligence Platform
 
-## Project Overview
-The YouTube Video Intelligence Analyzer is a comprehensive text-mining suite designed to extract, process, and analyze video content and audience interactions. Built as part of the CSI4004 Academic Research Framework, this application uses advanced natural language processing (NLP) and machine learning techniques to provide actionable insights into content credibility, public sentiment, and thematic trends.
+[![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![NLP](https://img.shields.io/badge/NLP-NLTK%20|%20VADER%20|%20LDA-green)](https://www.nltk.org/)
+[![Academic](https://img.shields.io/badge/Course-CSI4001-orange)](file:///Users/joel/Desktop/NLP/YouTube-Video-Intelligence-Analyzer/README.md)
 
-## Core Features
-- **Metadata Analytics:** Extraction of video performance metrics (views, likes, channel data) using local extraction tools.
-- **Sentiment & Opinion Analysis:** Real-time sentiment tracking and distribution analysis using the VADER lexicon.
-- **Topic Modeling:** Thematic clustering of audience feedback using Latent Dirichlet Allocation (LDA).
-- **Information Gain Extraction:** High-importance keyword identification via TF-IDF (Term Frequency-Inverse Document Frequency).
-- **Trust Score System:** An automated credibility rating based on engagement ratios and sentiment consistency.
-- **Anomaly Detection:** Identification of outlier comments and extreme sentiment deviations.
-- **Intelligence Assistant:** A rule-based local chatbot for interactive data querying.
+---
 
-## Technical Architecture
-- **Language:** Python 3.9+
-- **Data Acquisition:** yt-dlp, youtube-comment-downloader
-- **NLP & Mining:** scikit-learn, vaderSentiment, NLTK
-- **Visualization:** Plotly, Matplotlib, WordCloud
-- **UI Framework:** Streamlit (Custom Dark Theme)
+## 🚀 Project Overview
+The **YouTube NLP Intelligence & Sentiment Analyzer** is a high-performance research platform designed to extract and analyze natural language data from social media. Built as a capstone project for the **Natural Language Processing (CSI4001)** curriculum, this application transforms raw audience feedback into structured intelligence using state-of-the-art NLP pipelines.
 
-## Academic Alignment (CSI4004)
-This project maps directly to the following text mining modules:
-- **Module 1:** Information Extraction and Named Entity Recognition.
-- **Module 2/5:** Probabilistic Topic Modeling (LDA).
-- **Module 4:** Visual Analytics and Data Exploration.
-- **Module 7:** Sentiment Analysis and Opinion Mining.
+### **Core Capabilities**
+- 🧠 **Intelligence Assistant:** An interactive rule-based chatbot for semantic querying.
+- 📈 **Sentiment Polarity Tracking:** Real-time analysis of emotional trends and public opinion.
+- 🔍 **Topic Modeling (LDA):** Automated thematic extraction using Latent Dirichlet Allocation.
+- 🏷️ **Entity Extraction:** Named Entity Recognition (NER) for identifying key discourse subjects.
+- 🛡️ **Trust Score Engine:** A weighted algorithm for content credibility analysis.
 
-## Installation and Deployment
+---
 
-### Prerequisites
-- Python installed on your system.
-- Git (optional, for cloning).
+## 📚 Syllabus Alignment (CSI4001)
+This project serves as a comprehensive implementation of the CSI4001 Natural Language Processing curriculum.
 
-### Steps
-1. Clone the repository:
+| Module | Topic | Project Implementation |
+| :--- | :--- | :--- |
+| **Module 1** | **Overview of NLP** | Basic text processing, tokenization, and NLTK integration for data cleaning. |
+| **Module 5** | **POS Tagging** | Structural analysis foundation for Named Entity Recognition (NER). |
+| **Module 6** | **Lexical Semantics** | Semantic mapping, word similarity, and thematic clustering. |
+| **Module 7** | **Applications of NLP** | Sentiment Analysis, Text Summarization, and Information Extraction. |
+| **Module 8** | **Contemporary Issues** | Real-world social media data mining and anomaly detection. |
+
+---
+
+## 🛠️ Technical Architecture
+
+### **1. Data Acquisition & Preprocessing**
+- **Extraction:** Utilizes `yt-dlp` and `youtube-comment-downloader` for high-fidelity data retrieval.
+- **Cleaning:** Advanced Regex-based cleaning (removal of emojis, URLs, and handles) followed by NLTK-driven tokenization and stop-word filtering.
+
+### **2. Sentiment & Opinion Mining**
+- **Algorithm:** VADER (Valence Aware Dictionary and sEntiment Reasoner).
+- **Metric:** Compound polarity scores mapped across a time-series distribution to identify sentiment shifts.
+
+### **3. Probabilistic Topic Modeling**
+- **Algorithm:** Latent Dirichlet Allocation (LDA) via `Scikit-Learn`.
+- **Output:** Identifies latent thematic clusters within thousands of comments, providing a "bird's eye view" of the conversation.
+
+### **4. Visual Analytics Suite**
+- **WordClouds:** Thematic word frequency visualization.
+- **Plotly Integration:** Interactive scatter plots for anomaly detection (Sentiment vs. Content Length).
+- **TF-IDF Bar Charts:** Visualizing Information Gain and keyword significance.
+
+---
+
+## 💻 Installation & Setup
+
+1. **Clone the Repository**
    ```bash
    git clone https://github.com/NithinJoelJ/YouTube-Video-Intelligence-Analyzer.git
    cd YouTube-Video-Intelligence-Analyzer
    ```
 
-2. Install dependencies:
+2. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Initialize NLTK resources:
-   The application will automatically attempt to download required resources on the first run.
-
-4. Run the application:
+3. **Run the Application**
    ```bash
    streamlit run app.py
    ```
 
-## System Implementation
-The system is divided into two primary modules:
-1. **analyzer.py:** Contains the backend logic for data extraction, text preprocessing, sentiment analysis, and topic modeling.
-2. **app.py:** Manages the frontend interactive dashboard and visualization suite.
+---
 
-## Methodology
-The trust score calculation uses a weighted algorithm:
-- **Engagement Quality (40%):** Derived from the like-to-view ratio.
-- **Sentiment Positivity (40%):** Calculated from the percentage of positive audience feedback.
-- **Negative Penalty (20%):** Deductions based on high toxicity or negative sentiment concentration.
+## 🎓 Academic Framework
+**Course:** Natural Language Processing (CSI4001)  
+**Curriculum:** Fall Semester 2026  
+**Developer:** Nithin Joel J  
 
-## License
-This project is for research and educational purposes as part of the Fall Semester Text Mining curriculum.
+*This project is submitted as part of the academic requirements for the CSI4001 course, demonstrating proficiency in text mining, statistical NLP, and interactive visual analytics.*
